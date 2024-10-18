@@ -1,0 +1,36 @@
+.app-container {
+    background-image: url("../../../assets/img/pramod-tiwari-3BK2ROu9SFQ-unsplash.jpg");
+    min-height: 100vh; /* Asegura que el contenedor cubra toda la altura de la ventana */
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+
+.container{
+    margin-top: 10%;
+    margin-bottom: 5%;
+
+}
+
+
+
+.card{
+    background-color: rgba(102, 98, 98, 0.438);
+   backdrop-filter: blur(3px);
+}
+
+input{
+    background-color: rgba(102, 98, 98, 0.438);
+   backdrop-filter: blur(3px);
+}
+
+label{
+    color: aliceblue;
+}
+
+.crearCliente{
+    color: aliceblue;
+}

@@ -1,0 +1,49 @@
+<div class="app-container">
+    <div class="btn-agregar">
+        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#addModal" >Agregar Cliente</button>
+    </div>
+<div class="Container col-md-10">
+    <div class="card">
+     <div class="card-header">
+         <h3>Clientes</h3>
+     </div>
+     <div class="card-body">
+         <table class="table">
+             <thead>
+               <tr class="text-center">
+                 <th scope="col">ID</th>
+                 <th scope="col">NOMBRE</th>
+                 <th scope="col">SERVICIO</th>
+                 <th scope="col">CORREO</th>
+                 <th scope="col">PASS</th>
+                 <th scope="col">INICIO</th>
+                 <th scope="col">FIN</th>
+                 <th scope="col">ACCIONES</th>
+               </tr>
+             </thead>
+             <tbody>
+                 <tr class="text-center" >
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td>
+                         <p-button label="Editar"[raised]="true" rounded="true" [text]="true" severity="warning" icon="pi pi-check-circle" ></p-button>
+                         <p-button label="Contactar" [raised]="true" rounded="true" [text]="true" severity="success" icon="pi pi-whatsapp" />
+                         <p-button label="Eliminar"[raised]="true" rounded="true" [text]="true" severity="danger" icon="pi pi-check-circle" ></p-button>
+                     </td>
+                 </tr>
+     
+             </tbody>
+           </table>
+     </div>
+    </div>
+ </div>
+
+ <app-modal-add></app-modal-add>
+</div>
+ 
+ 

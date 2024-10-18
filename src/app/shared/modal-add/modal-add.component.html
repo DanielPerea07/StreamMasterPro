@@ -1,0 +1,43 @@
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content  p-1 lg:w-8">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <img src="../../../assets/img/agregar-usuario.png" alt="Image" height="50" class="me-2">
+                <h5 class="modal-title" id="loginModalLabel">Agregar Cliente</h5>
+            </div>
+
+            <div class="modal-body">
+                <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+                    <label for="id" class="label1">ID</label>
+                    <input formControlName="id" id="id" type="text" placeholder="ID" pInputText class="w-full mb-3">
+
+                    <label for="nombre" class="label1">Password</label>
+                    <input formControlName="nombre" id="nombre" type="text" placeholder="nombre" pInputText
+                        class="w-full mb-3">
+
+                    <label for="servicio" class="label1">servicio</label>
+                    <input formControlName="servicio" id="servicio" type="text" placeholder="servicio" pInputText
+                        class="w-full mb-3">
+
+                    <label for="correo" class="label1">correo</label>
+                    <input formControlName="correo" id="correo" type="text" placeholder="correo" pInputText
+                        class="w-full mb-3">
+
+                    <label for="pass" class="label1">pass</label>
+                    <input formControlName="pass" id="pass" type="text" placeholder="pass" pInputText
+                        class="w-full mb-3">
+
+
+                    <div class="containerButton">
+                        <p-button class="buttonSign" label="Agregar" severity="secondary" [rounded]="true"
+                            icon="pi pi-check-circle"></p-button>
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

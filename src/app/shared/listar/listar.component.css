@@ -1,0 +1,43 @@
+.app-container {
+    background-image: url("../../../assets/img/dark_wll.jpg");
+    min-height: 100vh; /* Asegura que el contenedor cubra toda la altura de la ventana */
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+
+
+.Container{
+    margin-left: 8%;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+
+
+.card{
+    background-color: rgba(102, 98, 98, 0.438);
+    backdrop-filter: blur(3px);
+}
+
+
+th{
+    background-color: rgba(102, 98, 98, 0.438);
+    backdrop-filter: blur(3px);
+}
+
+td{
+    background-color: rgba(89, 107, 107, 0.062);
+}
+
+.card-header, h3 {
+color: aliceblue;
+}
+
+.btn-agregar{
+    margin-top: 10%;
+    margin-left: 45%;
+}

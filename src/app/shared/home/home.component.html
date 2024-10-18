@@ -1,0 +1,33 @@
+<div class="app-container">
+    <div class="bienvenido">
+        <h2>Hola! Bienvenido</h2>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal" style="margin-left: 25%;" >Iniciar sesion</button>
+    </div>
+
+    <div class="mostrarPeliculas">
+        <button class="btn btn-dark" (click)="toggleMovies()">
+            {{ isVisible ? 'Ocultar Películas' : 'Mostrar Películas' }}
+          </button>
+    </div>
+
+    
+
+ 
+    <div class="moviesContainer" *ngIf="isVisible">
+        <div class="movies" *ngFor="let movie of movies">
+            
+            <img [src]="'https://image.tmdb.org/t/p/w200' + movie.poster_path" alt="{{ movie.title }}">
+            <p style="color: aliceblue;">Rating: {{ movie.vote_average }} ({{ movie.vote_count }} votos)</p>
+        </div>
+    </div>
+
+    
+
+
+    <app-modal-login></app-modal-login>
+</div>
+
+
+
+
+

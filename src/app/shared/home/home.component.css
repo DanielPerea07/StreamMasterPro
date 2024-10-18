@@ -1,0 +1,47 @@
+.app-container {
+    background-image: url("../../../assets/img/pramod-tiwari-3BK2ROu9SFQ-unsplash.jpg");
+    min-height: 100vh; /* Asegura que el contenedor cubra toda la altura de la ventana */
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    flex-direction: column;
+}
+
+.moviesContainer{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    backdrop-filter: blur(4px);
+    max-width: 80%;
+}
+
+
+.movies{
+    margin-left: 20px;
+}
+
+.bienvenido{
+    font-family: 'Satisfy', cursive;
+    margin-top: 10%;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+
+.bienvenido, h2 {
+    font-size:40px
+}
+
+.mostrarPeliculas{
+    margin-bottom: 20px;
+    margin-left: 45%;
+}
+
+.btn{
+    max-width: 150px;
+    min-width: 150px;
+}

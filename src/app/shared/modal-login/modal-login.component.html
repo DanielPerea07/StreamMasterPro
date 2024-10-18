@@ -1,0 +1,40 @@
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content  p-1 lg:w-8">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <img src="../../../assets/img/pngwing.com.png" alt="Image" height="50" class="me-2">
+                <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                <span class="span1">No tienes una cuenta?</span>
+                <a class="font-medium no-underline ml-2 text-black-500 cursor-pointer">Crea una aqui!</a>
+            </div>
+
+            <div class="modal-body">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <label for="email1" class="label1">Email</label>
+                    <input formControlName="email" id="email1" type="text" placeholder="Email address" pInputText
+                        class="w-full mb-3">
+
+                    <label for="password1" class="label1">Password</label>
+                    <input formControlName="password" id="password1" type="password" placeholder="Password" pInputText
+                        class="w-full mb-3">
+
+                    <div class="flex align-items-center justify-content-between mb-6">
+                        <div class="flex align-items-center">
+                        </div>
+                        <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Perdiste tu
+                            contraseña?</a>
+                    </div>
+
+                    <div class="containerButton">
+                        <p-button class="buttonSign" label="Ingresar" severity="secondary" [rounded]="true"
+                            icon="pi pi-user"></p-button>
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

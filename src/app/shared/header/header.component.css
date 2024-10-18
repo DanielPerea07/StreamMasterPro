@@ -1,0 +1,48 @@
+.container-fluid {
+    background-color: rgba(102, 98, 98, 0.438);  
+    padding: 10px;
+    margin-top: -10px;
+    border: 2px;
+    
+}
+
+.offcanvas  {
+    color: rgb(0, 0, 0);
+    background-color: rgba(102, 98, 98, 0.438);  
+   backdrop-filter: blur(3px);
+}
+
+.navbar-brand {
+    text-decoration: solid;
+    font-size:xx-large;
+    font: bold;
+    font-family: 'Satisfy', cursive;
+}
+
+.navbar-brand2 {
+    text-decoration: solid;
+    font-size:xx-large;
+    font: 900;
+    font-family: 'Satisfy', cursive;
+    color: rgba(235, 2, 2, 0.719);
+    margin-left: -80%;
+}
+
+
+
+
+.offcanvas-body {
+    color: aliceblue;
+}
+
+.nav-item {
+    color: aliceblue;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+.dropdown-menu a{
+    color: aliceblue;
+}
